@@ -35,10 +35,11 @@ Postman kan downloades fra https://www.getpostman.com/ og installeres som ethver
 
 Samlingen består primært af et POST kald der autentificerer "Postman klienten" og potentielt også Låneren og en række POST/GET kald der henter forskellige typer af information ud af systemet. 
 
-1. Download [Opeplatform Postman collection](https://raw.githubusercontent.com/rolfmadsen/openplatform-Postman-client/master/Openplatform.postman_collection.json), som er delt i dette Github repository, og gem filen på dit skrivebord
-2. Åben Postman
-3. Tryk på "Import" knappen i den øverste grå menu linje og tryk på "Choose Files" knappen i det Import vindue der dukker op midt på skærmen.
-4. Dobbelt-klik på "FBS postman collection" filen på dit skrivebord for at importere den.
+1. Tryk på linket [Opeplatform Postman collection](https://raw.githubusercontent.com/rolfmadsen/openplatform-Postman-client/master/Openplatform.postman_collection.json).
+2. Tryk CTRL+S for at downloade filen, og gem den på dit skrivebord.
+3. Åben Postman
+4. Tryk på "Import" knappen i den øverste grå menu linje og tryk på "Choose Files" knappen i det Import vindue der dukker op midt på skærmen.
+5. Dobbelt-klik på "FBS postman collection" filen på dit skrivebord for at importere den.
 
 ## Benytte Environment variables
 
