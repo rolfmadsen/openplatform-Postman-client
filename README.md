@@ -15,13 +15,13 @@ Målgruppen er webmastere der ønsker at se de data FBS udleverer til f. eks. DD
 
 Openplatform Postman collection giver mulighed for at hente følgende oplysninger fra Openplatform:
 
-* Order
-* CMS
-* Search
-* Libraries
-* Recommend
-* Status
-* Suggest
+* Order (Endnu ikke tilføjet)
+* CMS (Endnu ikke tilføjet)
+* Search (Delvist tilføjet)
+* Libraries (Endnu ikke tilføjet)
+* Recommend (Endnu ikke tilføjet)
+* Status (Endnu ikke tilføjet)
+* Suggest (Endnu ikke tilføjet)
 
 ## Installér Postman klienten
 
