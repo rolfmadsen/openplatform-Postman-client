@@ -62,7 +62,7 @@ Derfor kan jeg kun dele et environment hvor de følsomme oplysninger er udskifte
   * "client_id" med de client ID du kan få udleveret ved henvendelse til DBC
   * "client_secret" med den client secret du kan få udleveret ved henvendelse til DBC
   * "user_id:" OBS. Er udfyldt med "@" som er default for en anonym bruger, men et CPR-nummer eller Biblioteksnummer kan indsættes hvis der skal laves opslag i Openplatform der forudsætter en autentificeret (indlogget) bruger.
-  * "user_password" OBS. Er udfyldt med "@" som er default for en anonym bruger, men et CPR-nummer eller Biblioteksnummer kan indsættes hvis der skal laves opslag i Openplatform der forudsætter en autentificeret (indlogget) bruger.
+  * "user_password" OBS. Er udfyldt med "@" som er default for en anonym bruger, men en pin-kode kan indsættes hvis der skal laves opslag i Openplatform der forudsætter en autentificeret (indlogget) bruger.
 
 ### access_token
 
