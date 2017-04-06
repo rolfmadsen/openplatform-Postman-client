@@ -1,0 +1,99 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DBC Open Platform",
+		"_postman_id": "96b5e6cd-4105-11da-e47e-8853ea55dcbb",
+		"description": "The ServiceProvider is the API server for the open platform, https://openplatform.dbc.dk/. It makes it easier to access different webservices through a uniform API.\n\nIt can be acessed through GET-requests, POST-requests, as well as through websockets.\n\nAuthentication is done through OAuth2, through https://auth.dbc.dk/.\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "authentication",
+			"description": "",
+			"item": [
+				{
+					"name": "Client authenticate",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var data = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", data.access_token);"
+								]
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "{{client_id}}",
+								"password": "{{client_secret}}",
+								"saveHelperData": true,
+								"showPassword": false
+							}
+						},
+						"url": "{{auth-host}}",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "username",
+									"value": "{{user_id}}",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "password",
+									"value": "{{user_password}}",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Authenticate the Postman client."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "search",
+			"description": "Folder for search",
+			"item": [
+				{
+					"name": "search",
+					"request": {
+						"url": "{{service-host}}search?&access_token={{access_token}}&pretty={{pretty}}&timings={{timings}}&q={{q}}&offset={{offset}}&limit={{limit}}&sort={{sort}}",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "Search for a library material."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
